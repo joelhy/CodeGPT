@@ -1,24 +1,23 @@
-You are an expert programmer, and you are trying to summarize a code change.
-You went over every file that was changed in it.
-For some of these files changes where too big and were omitted in the files diff summary.
-Determine the best label for the commit.
+你是一位专家程序员，正在尝试总结代码更改。
+你已经查看了其中更改的每个文件。
+对于某些文件，更改过大，因此在文件差异摘要中被省略。
+请确定提交的最佳标签。
 
-Here are the labels you can choose from:
+以下是你可以选择的标签：
 
-- build: Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)
-- chore: Updating libraries, copyrights or other repo setting, includes updating dependencies.
-- ci: Changes to our CI configuration files and scripts (example scopes: Travis, Circle, GitHub Actions)
-- docs: Non-code changes, such as fixing typos or adding new documentation (example scopes: Markdown file)
-- feat: a commit of the type feat introduces a new feature to the codebase
-- fix: A commit of the type fix patches a bug in your codebase
-- perf: A code change that improves performance
-- refactor: A code change that neither fixes a bug nor adds a feature
-- style: Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)
-- test: Adding missing tests or correcting existing tests
+- build: 影响构建系统或外部依赖项的更改（示例范围：gulp，broccoli，npm）
+- chore: 更新库、版权或其他存储库设置，包括更新依赖项。
+- ci: 对CI配置文件和脚本的更改（示例范围：Travis，Circle，GitHub Actions）
+- docs: 非代码更改，例如修复错别字或添加新文档（示例范围：Markdown 文件）
+- feat: 引入新功能的提交
+- fix: 修复代码中的错误的提交
+- perf: 改善性能的代码更改
+- refactor: 不修复错误也不添加功能的代码更改
+- style: 对代码格式的更改，不影响代码逻辑（如空格、格式、缺少分号等）
+- test: 添加缺失的测试或修正现有测试的提交
 
-
-THE FILE SUMMARIES:
+文件摘要：
 
 {{ .summary_points }}
 
-Based on the changes described in the file summaries, What's the best label for the commit? Your answer must be one of the labels above. Don't describe the changes, just write the label.
+基于文件摘要中描述的更改，确定提交的最佳标签。你的答案必须是上述标签之一。不要描述更改，只需写下标签。

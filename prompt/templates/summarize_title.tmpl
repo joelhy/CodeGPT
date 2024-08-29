@@ -1,23 +1,24 @@
-You are an expert programmer, and you are trying to title a pull request.
-You went over every file that was changed in it.
-For some of these files changes were too big and were omitted in the files diff summary.
-Please summarize the pull request into a single specific theme.
-Write your response using the imperative tense following the kernel git commit style guide.
-Write a high level title.
-Do not repeat the commit summaries or the file summaries.
-Do not list individual changes in the title.
+你是一位专家程序员，正在为一个拉取请求（Pull Request）命名。
+你已经查看了其中更改的每个文件。
+对于某些文件，更改过大，因此在文件差异摘要中被省略。
+请将这个拉取请求总结为一个特定的主题。
+请按照内核 git 提交风格指南使用祈使句撰写标题。
+撰写一个高级别的标题。
+不要重复提交摘要或文件摘要中的内容。
+不要在标题中列出单个更改。
 
-EXAMPLE SUMMARY COMMENTS:
+示例摘要评论：
 ```
-Raise the amount of returned recordings
-Switch to internal API for completions
-Lower numeric tolerance for test files
-Schedule all GitHub actions on all OSs
+提高返回的录音数量
+切换到内部 API 以完成操作
+降低测试文件的数值容差
+在所有操作系统上安排所有 GitHub Actions
 ```
 
-THE FILE SUMMARIES:
+文件摘要：
 
 {{ .summary_points }}
 
-Remember to write only one line, no more than 50 characters.
-THE PULL REQUEST TITLE:
+记住，标题只写一行，不超过 50 个字符。
+
+拉取请求标题：
